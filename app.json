@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/karaoke/karaoke",
+    "pages/home/home",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#f6f6f6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f6f6f6",
+    "navigationBarTitleText": "K歌王者",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-button": "dist/button/index"
+  }
+}

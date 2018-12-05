@@ -1,0 +1,24 @@
+<view class='home'>
+  <!-- 背景图片 -->
+  <image class='image-bg' mode="scaleToFill" src="{{bgImage}}"></image>
+  <!-- logo显示 -->
+
+  <text wx:if="{{duringMatch}}" class='text-match'>{{matchText}}</text>
+  
+  <view class="page-top">
+
+    <image class='image-icon' mode="scaleToFill" src="{{imageSrc}}"></image>
+    <view class='start-button'>
+      <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </block>
+      </view>
+
+      <van-button type="warning" bindtap='startKaraoke'>开始匹配</van-button>
+    </view>
+
+  </view>
+
+</view>

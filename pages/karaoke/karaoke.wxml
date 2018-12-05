@@ -1,0 +1,39 @@
+<view class='home'>
+  <!-- 背景图片 -->
+  <image class='image-bg' mode="scaleToFill" src="{{bgImage}}"></image>
+
+  <text class='song-title'>可不可以</text>
+
+  <!-- 歌词 -->
+  <view class='lyric'>
+    <scroll-view scroll-y="true" scroll-with-animation='true' scroll-top='{{marginTop}}' class='scroll-view'>
+      <view class='contentText'>
+        <block wx:for='{{storyContent}}'>
+          <text class="{{currentIndex222 == index ? 'currentTime-lyric' : 'normal-lyric'}}">{{item[1]}}</text>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+
+  <progress  percent="{{currentPlayProgress}}" class='progress'></progress>
+
+  <view class='userinfo-container'>
+    <view class='userinfo-container-item'>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">得分：100</text>
+    </view>
+    <view class='userinfo-container-item'>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">得分：100</text>
+    </view>
+  </view>
+
+  <!-- 背景图片 -->
+  <view class='score-image-container'>
+    <view class="score">
+      <image class='score-image' mode="scaleToFill" src='{{scoreImage}}'></image>
+    </view>
+  </view>
+
+
+</view>

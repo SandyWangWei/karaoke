@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view>
+    <view class="page-top">
+        <text class="username">全民K歌</text>
+        
+        <view class="page-btn-wrap">
+            <button class="page-btn" bindtap="testSocket">测试socket</button>
+
+            <button class="page-btn" bindtap="beginRecord">开始录音</button>
+
+            <button class="page-btn" bindtap="stopRecord">停止录音</button>
+        </view>
+
+        <text>日志：{{msg}}</text>
+    </view>
+    
+
+</view>
